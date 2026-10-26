@@ -492,6 +492,9 @@ export function setDatabase(data:Database){
     }
     if (data.botPresets) {
         for (const preset of data.botPresets) {
+            if(preset.autoSuggestPrompt === legacyAutoSuggestPrompt){
+                preset.autoSuggestPrompt = defaultAutoSuggestPrompt
+            }
             if(Array.isArray(preset.promptTemplate)){
                 preset.promptTemplate = normalizePromptTemplate(preset.promptTemplate)
             }
