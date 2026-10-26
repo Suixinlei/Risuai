@@ -12,10 +12,10 @@ export const defaultAutoSuggestPrompt = `Review past conversations and infer opt
 4. A creative and interesting response that would introduce unexpectedness or a twist, differing from the development so far.
 5. A blunt or impolite response that entirely excludes any moral, hopeful, or bonding elements.
 
-Separate each option with a newline and print it out in English only and start with -.
+Separate each option with a newline and print it out in the language of the conversation only and start with -.
 The output responses should be the user's response only.
 Be sure to each options are respond of user.
-Be sure to print in English only.
+Be sure to print in the language of the conversation only.
 Be sure to print start with -.
 Do not print respond of assistant.
 
